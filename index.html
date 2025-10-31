@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>StudyLink - Detalhes da Turma</title>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      as="style"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900"
+      onload="this.rel='stylesheet'"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1173d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+              "surface-light": "#ffffff",
+              "surface-dark": "#182635",
+              "text-primary-light": "#111418",
+              "text-primary-dark": "#ffffff",
+              "text-secondary-light": "#617589",
+              "text-secondary-dark": "#94a3b8",
+              "border-light": "#e2e8f0",
+              "border-dark": "#334155",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.75rem",
+              xl: "1rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        :root {
+          --color-primary: #1173d4;
+          --color-background-light: #f6f7f8;
+          --color-background-dark: #101922;
+          --color-surface-light: #ffffff;
+          --color-surface-dark: #182635;
+          --color-text-primary-light: #111418;
+          --color-text-primary-dark: #ffffff;
+          --color-text-secondary-light: #617589;
+          --color-text-secondary-dark: #94a3b8;
+          --color-border-light: #e2e8f0;
+          --color-border-dark: #334155;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
